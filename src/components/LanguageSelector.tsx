@@ -15,7 +15,7 @@ const LanguageSelector = () => {
     <Menu>
       <MenuButton>
         <HStack>
-          <Text>English</Text>
+          <Text marginBottom={0}>English</Text>
           <Image src={ukFlag} boxSize={5} />
         </HStack>
       </MenuButton>
