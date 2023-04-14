@@ -1,4 +1,15 @@
-import { Colors, extendTheme, ThemeConfig } from "@chakra-ui/react";
+import {
+  ChakraComponent,
+  Colors,
+  ComponentMultiStyleConfig,
+  ComponentStyleConfig,
+  extendTheme,
+  StyleConfig,
+  StyleFunctionProps,
+  StyleProps,
+  ThemeComponents,
+  ThemeConfig,
+} from "@chakra-ui/react";
 
 const config: ThemeConfig = {
   initialColorMode: "dark",
@@ -22,5 +33,20 @@ const colors: Colors = {
   dark: "#100F1B",
 };
 
-const theme = extendTheme({ config, colors });
+const components: ThemeComponents = {
+  Link: {
+    baseStyle: {
+      fontSize: "22px",
+      color: "primary",
+    },
+  },
+  Text: {
+    baseStyle: {
+      fontSize: "18px",
+    },
+  },
+};
+
+// const;
+const theme = extendTheme({ config, colors, components });
 export default theme;
