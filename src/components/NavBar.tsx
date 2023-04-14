@@ -1,22 +1,12 @@
-import {
-  Box,
-  Button,
-  HStack,
-  Image,
-  Link,
-  Menu,
-  MenuButton,
-  MenuGroup,
-  MenuItem,
-  MenuList,
-  Switch,
-  Text,
-} from "@chakra-ui/react";
+import { HStack, Image, Show, useBoolean } from "@chakra-ui/react";
+import { RiMenu3Fill } from "react-icons/ri";
 import logo from "../assets/images/logo.webp";
-import ColorModeSwicth from "./ColorModeSwicth";
-import LanguageSelector from "./LanguageSelector";
+import FloatingMenu from "./FloatingMenu";
+import Menu from "./Menu";
 
 const NavBar = () => {
+  const [showMenu, toogleMenu] = useBoolean(false);
+
   return (
     <HStack
       justifyContent="space-between"
@@ -25,21 +15,19 @@ const NavBar = () => {
       borderColor="whiteAlpha.200"
     >
       <Image src={logo} boxSize={16} />
-      <HStack spacing={12}>
-        <Link variant="link" color="primary">
-          Works
-        </Link>
-        <Link variant="link" color="primary">
-          About
-        </Link>
-        <Link variant="link" color="primary">
-          Contact
-        </Link>
-      </HStack>
-      <HStack spacing={8}>
-        <ColorModeSwicth />
-        <LanguageSelector />
-      </HStack>
+      <Show above="md">
+        <Menu />
+      </Show>
+      <Show below="md">
+        {showMenu && (
+          <FloatingMenu toggleMenu={toogleMenu}>
+            <Menu />
+          </FloatingMenu>
+        )}
+      </Show>
+      <Show below="md">
+        <RiMenu3Fill size={20} onClick={toogleMenu.toggle} />
+      </Show>
     </HStack>
   );
 };

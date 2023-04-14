@@ -6,7 +6,7 @@ const Hero = () => {
     <Flex
       justifyContent="center"
       alignItems="flex-end"
-      minHeight="75vh"
+      minHeight="600px"
       position="relative"
     >
       <Heading
