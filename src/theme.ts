@@ -10,6 +10,7 @@ import {
   ThemeComponents,
   ThemeConfig,
 } from "@chakra-ui/react";
+import { StyledOptions } from "@emotion/styled";
 
 const config: ThemeConfig = {
   initialColorMode: "dark",
@@ -48,5 +49,10 @@ const components: ThemeComponents = {
 };
 
 // const;
-const theme = extendTheme({ config, colors, components });
+const theme = extendTheme({
+  config,
+  colors,
+  components,
+  fonts: { body: "poppins", heading: "poppins" },
+});
 export default theme;
