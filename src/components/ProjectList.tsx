@@ -5,7 +5,7 @@ import Project from './Project';
 const ProjectList = () => {
   return (
     <Box>
-        <Heading as="h2" marginBottom={40}>My Works</Heading>
+        <Heading as="h2">My Works</Heading>
         <Box>
             <Project />
         </Box>
