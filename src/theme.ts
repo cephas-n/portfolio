@@ -35,6 +35,17 @@ const colors: Colors = {
 };
 
 const components: ThemeComponents = {
+  Button: {
+    baseStyle: {
+      fontWeight: "400",
+      borderRadius: 0,
+    },
+    variants: {
+      outline: {
+        color: "primary"
+      }
+    }
+  },
   Link: {
     baseStyle: {
       fontSize: "22px",
@@ -44,6 +55,33 @@ const components: ThemeComponents = {
   Text: {
     baseStyle: {
       fontSize: "18px",
+      fontWeight: "400",
+      lineHeight: "30px",
+    },
+  },
+};
+
+const styles = {
+  global: {
+    h2: {
+      fontSize: "52px !important",
+      textTransform: "uppercase",
+      color: "primary",
+      textAlign: "center",
+      marginBottom: "60px",
+    },
+    h3: {
+      fontSize: "38px !important",
+      textTransform: "capitalize",
+      color: "gray.200",
+    },
+    h4: {
+      fontSize: "18px !important",
+      textTransform: "uppercase",
+      color: "secondary",
+      marginTop: "10px",
+      marginBottom: "24px",
+      fontWeight: "400 !important",
     },
   },
 };
@@ -54,5 +92,6 @@ const theme = extendTheme({
   colors,
   components,
   fonts: { body: "poppins", heading: "poppins" },
+  styles,
 });
 export default theme;

@@ -3,12 +3,17 @@ import myPhoto from "../assets/images/me.webp";
 
 const Hero = () => {
   return (
-    <Flex justifyContent="center" alignItems="flex-end" minHeight="75vh">
+    <Flex
+      justifyContent="center"
+      alignItems="flex-end"
+      minHeight="75vh"
+      position="relative"
+    >
       <Heading
         as="h1"
         position="absolute"
         top="35%"
-        left="10%"
+        left="7%"
         width="min-content"
         lineHeight={0.9}
         fontWeight="semibold"

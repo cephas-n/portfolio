@@ -19,3 +19,22 @@
     #100f1b 85.96%
   );
 }
+
+/* Project list */
+.project-preview {
+  position: relative;
+}
+
+.project-preview::before {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 5px;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 100%;
+  box-shadow: 0px 60px 50px 10px rgba(255, 255, 255, 0.15);
+  z-index: -1;
+}
