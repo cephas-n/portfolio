@@ -1,4 +1,4 @@
-import { Box, Container } from "@chakra-ui/react";
+import { Box, Container, Text } from "@chakra-ui/react";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Hero from "./components/Hero";
@@ -24,6 +24,11 @@ const App = () => {
       <Section>
         <Contact />
       </Section>
+      <Box as="footer" borderTop="1px" borderColor="whiteAlpha.100" paddingTop={5}>
+        <Text textAlign="center" color="gray.700">
+          Copyright &copy; 2023
+        </Text>
+      </Box>
     </Box>
   );
 };
