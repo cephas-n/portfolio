@@ -12,7 +12,21 @@ import enerBuildPower from "../assets/images/enerbuild-power.webp";
 
 const Project = () => {
   return (
-    <HStack spacing={24} alignItems="flex-start" marginBottom={60}>
+    <HStack
+      spacing={{
+        base: 0,
+        lg: 24,
+      }}
+      alignItems="flex-start"
+      marginBottom={{
+        base: 40,
+        lg: 60,
+      }}
+      flexWrap={{
+        base: "wrap",
+        lg: "nowrap",
+      }}
+    >
       <Box>
         <Heading as="h3">EnerBuild Power S.A.R.L</Heading>
         <Heading as="h4">BROCURE WEBSITE DESIGN</Heading>
@@ -41,8 +55,29 @@ const Project = () => {
           />
         </Button>
       </Box>
-      <Box className="project-preview">
-        <Image src={enerBuildPower} width="600" />
+      <Box
+        className="project-preview"
+        textAlign="center"
+        flex={{
+          base: 1,
+          lg: "initial",
+        }}
+      >
+        <Image
+          src={enerBuildPower}
+          display="block"
+          marginX="auto"
+          width={{
+            base: "100%",
+            md: "600px",
+            lg: "100%",
+          }}
+          marginTop={{
+            base: 6,
+            md: 12,
+            lg: 0,
+          }}
+        />
       </Box>
     </HStack>
   );

@@ -3,8 +3,8 @@ import React, { ReactNode } from "react";
 
 interface Props {
   children: ReactNode;
-  paddingBottom?: { [key: string]: number };
-  paddingTop?: { [key: string]: number };
+  paddingBottom?: { [key: string]: number } | number;
+  paddingTop?: { [key: string]: number } | number;
 }
 const Section = ({
   children,

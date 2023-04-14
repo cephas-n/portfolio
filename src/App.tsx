@@ -15,10 +15,10 @@ const App = () => {
       <Section>
         <Hero />
       </Section>
-      <Section>
+      <Section paddingBottom={0}>
         <ProjectList />
       </Section>
-      <Section>
+      <Section paddingTop={0}>
         <About />
       </Section>
       <Section>
