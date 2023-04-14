@@ -65,10 +65,10 @@ const components: ThemeComponents = {
   },
   Text: {
     baseStyle: {
-      fontSize: "18px",
+      fontSize: ["16px", "16px", "18px"],
       fontWeight: "400",
       lineHeight: "30px",
-      marginBottom: "24px",
+      marginBottom: ["10px", "10px", "24px"],
     },
   },
 };
@@ -76,19 +76,19 @@ const components: ThemeComponents = {
 const styles = {
   global: {
     h2: {
-      fontSize: "52px !important",
+      fontSize: ["48px !important", "48px !important", "52px !important"],
       textTransform: "uppercase",
       color: "primary",
       textAlign: "center",
-      marginBottom: "60px !important",
+      marginBottom: ["30px !important", "30px !important", "60px !important"],
     },
     h3: {
-      fontSize: "38px !important",
+      fontSize: ["28px !important", "28px !important", "38px !important"],
       textTransform: "capitalize",
       color: "gray.200",
     },
     h4: {
-      fontSize: "18px !important",
+      fontSize: ["16px !important", "18px !important"],
       textTransform: "uppercase",
       color: "secondary.500",
       marginTop: "10px",

@@ -37,7 +37,10 @@ const About = () => {
         borderColor="primary"
         marginX="auto"
         display="block"
-        marginTop={24}
+        marginTop={{
+          base: 16,
+          md: 24,
+        }}
         rightIcon={<BsDownload />}
       >
         Download My Resume

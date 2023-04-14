@@ -5,8 +5,15 @@ const SkillCard = () => {
   return (
     <Box marginBottom={6}>
       <HStack>
-        <Image src={jsIcon} boxSize={6} />
-        <Text textTransform="uppercase" color="gray.500">
+        <Image src={jsIcon} boxSize={{ base: 4, sm: 6 }} />
+        <Text
+          textTransform="uppercase"
+          color="gray.500"
+          fontSize={{
+            base: "14px",
+            sm: "16px",
+          }}
+        >
           Javascript
         </Text>
       </HStack>

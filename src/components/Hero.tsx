@@ -8,7 +8,7 @@ const Hero = () => {
       alignItems="flex-end"
       minHeight={{
         base: "400px",
-        sm: "600px",
+        sm: "500px",
       }}
       position="relative"
     >

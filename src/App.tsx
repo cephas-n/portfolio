@@ -12,7 +12,7 @@ const App = () => {
       <Container maxW="container.xl">
         <NavBar />
       </Container>
-      <Section>
+      <Section paddingBottom={0}>
         <Hero />
       </Section>
       <Section paddingBottom={0}>
