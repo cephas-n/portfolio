@@ -1,10 +1,10 @@
 import { Box, Container } from "@chakra-ui/react";
-import React from "react";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Hero from "./components/Hero";
 import NavBar from "./components/NavBar";
 import ProjectList from "./components/ProjectList";
+import Section from "./components/Section";
 
 const App = () => {
   return (
@@ -12,18 +12,18 @@ const App = () => {
       <Container maxW="container.xl">
         <NavBar />
       </Container>
-      <Container maxW="container.xl" paddingBottom={48} paddingTop={28}>
+      <Section>
         <Hero />
-      </Container>
-      <Container maxW="container.xl">
+      </Section>
+      <Section>
         <ProjectList />
-      </Container>
-      <Container maxW="container.xl" paddingBottom={48}>
+      </Section>
+      <Section>
         <About />
-      </Container>
-      <Container maxW="container.xl" paddingBottom={4}>
+      </Section>
+      <Section>
         <Contact />
-      </Container>
+      </Section>
     </Box>
   );
 };

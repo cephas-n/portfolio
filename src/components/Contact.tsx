@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <Box as="footer">
       <Heading as="h2">Contact me</Heading>
-      <Flex justifyContent="space-between">
+      <Flex justifyContent="space-between" flexWrap="wrap">
         <Box width="min-content">
           <Link as={HStack} marginBottom={6} color="gray.500">
             <Icon as={BsWhatsapp} boxSize={6} />
@@ -26,7 +26,9 @@ const Contact = () => {
           <ContactForm />
         </Box>
       </Flex>
-      <Text textAlign="center" marginTop={32} color="gray.700">Copyright &copy; 2023</Text>
+      <Text textAlign="center" marginTop={32} color="gray.700">
+        Copyright &copy; 2023
+      </Text>
     </Box>
   );
 };
