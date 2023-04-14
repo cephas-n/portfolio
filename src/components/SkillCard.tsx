@@ -15,7 +15,10 @@ const SkillCard = () => {
         borderRadius={24}
         marginTop={2}
         colorScheme="secondary"
-        height="10px"
+        height={{
+          base: "8px",
+          md: "10px",
+        }}
       />
     </Box>
   );
