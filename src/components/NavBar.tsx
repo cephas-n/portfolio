@@ -10,11 +10,20 @@ const NavBar = () => {
   return (
     <HStack
       justifyContent="space-between"
-      padding={4}
+      paddingY={{
+        base: 4,
+        md: 8,
+      }}
       borderBottom="1px"
-      borderColor="whiteAlpha.200"
+      _dark={{ borderColor: "whiteAlpha.200" }}
+      _light={{ borderColor: "blackAlpha.100" }}
     >
-      <Image src={logo} boxSize={16} />
+      <Image
+        src={logo}
+        boxSize={12}
+        filter="auto"
+        _light={{ brightness: "10%" }}
+      />
       <Show above="md">
         <Menu />
       </Show>

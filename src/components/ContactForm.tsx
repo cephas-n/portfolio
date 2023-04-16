@@ -21,7 +21,17 @@ const ContactForm = () => {
         marginBottom={4}
         focusBorderColor="primary"
       />
-      <Button variant="outline" borderColor="primary" borderRadius='md'>
+      <Button
+        variant="outline"
+        borderColor="primary"
+        borderRadius="md"
+        transform="auto"
+        transition="ease-in-out .3s"
+        _hover={{
+          scale: 1.05,
+          translateX: 4
+        }}
+      >
         Send your message
       </Button>
     </FormControl>

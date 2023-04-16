@@ -87,7 +87,7 @@ const components: ThemeComponents = {
 };
 
 const styles = {
-  global: {
+  global: (props: StyleFunctionProps) => ({
     h2: {
       fontSize: ["48px !important", "48px !important", "52px !important"],
       textTransform: "uppercase",
@@ -98,7 +98,7 @@ const styles = {
     h3: {
       fontSize: ["28px !important", "28px !important", "38px !important"],
       textTransform: "capitalize",
-      color: "gray.200",
+      color: props.colorMode === "dark" ? "gray.200" : "gray.800",
     },
     h4: {
       fontSize: ["16px !important", "18px !important"],
@@ -108,7 +108,7 @@ const styles = {
       marginBottom: "24px",
       fontWeight: "400 !important",
     },
-  },
+  }),
 };
 
 // const;

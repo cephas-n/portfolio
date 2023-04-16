@@ -1,10 +1,11 @@
 import { GridItem, Heading, SimpleGrid } from "@chakra-ui/react";
 import React from "react";
+import { Fade } from "react-awesome-reveal";
 import SkillCard from "./SkillCard";
 
 const SkillsList = () => {
   return (
-    <>
+    <Fade triggerOnce style={{ opacity: 0 }}>
       <Heading as="h2">Skills</Heading>
       <SimpleGrid
         columns={{
@@ -33,7 +34,7 @@ const SkillsList = () => {
           <SkillCard />
         </GridItem>
       </SimpleGrid>
-    </>
+    </Fade>
   );
 };
 

@@ -1,11 +1,12 @@
 import { Box, Button, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import { Fade } from "react-awesome-reveal";
 import { BsDownload } from "react-icons/bs";
 import myPhoto from "../assets/images/me.webp";
 import SkillsList from "./SkillsList";
 
 const About = () => {
   return (
-    <>
+    <Fade triggerOnce style={{ opacity: 0 }}>
       <Image
         src={myPhoto}
         boxSize={32}
@@ -42,10 +43,15 @@ const About = () => {
         }}
         rightIcon={<BsDownload />}
         borderRadius="md"
+        transform="auto"
+        transition="ease-in-out .3s"
+        _hover={{
+          scale: 1.1,
+        }}
       >
         Download My Resume
       </Button>
-    </>
+    </Fade>
   );
 };
 

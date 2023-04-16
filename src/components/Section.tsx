@@ -6,6 +6,8 @@ interface Props {
   paddingBottom?: { [key: string]: number } | number;
   paddingTop?: { [key: string]: number } | number;
   bgColor?: { [key: string]: string } | string;
+  _dark?: { [key: string]: string | number };
+  _light?: { [key: string]: string | number };
 }
 const Section = ({
   children,
@@ -18,9 +20,11 @@ const Section = ({
     md: 28,
   },
   bgColor,
+  _dark,
+  _light
 }: Props) => {
   return (
-    <Box as="section" bgColor={bgColor}>
+    <Box as="section" bgColor={bgColor} _dark={_dark} _light={_light} >
       <Container
         maxW="container.xl"
         paddingTop={paddingTop}

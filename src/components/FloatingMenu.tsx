@@ -2,6 +2,7 @@ import { Flex, Icon, StyleProps, useColorMode } from "@chakra-ui/react";
 import { ReactNode } from "react";
 import { RiCloseFill } from "react-icons/ri";
 import { ChakraBooleanHook } from "../@types/useBoolean";
+import { StyledOptions } from "@emotion/styled";
 
 interface Props {
   children: ReactNode;
@@ -20,11 +21,15 @@ const FloatingMenu = ({ children, toggleMenu }: Props) => {
     flexDirection: "column",
     gap: 32,
     zIndex: 1000,
-    bgColor: "gray.800",
+    marginInlineStart: "0px !important",
   };
 
   return (
-    <Flex {...styles}>
+    <Flex
+      {...styles}
+      _dark={{ bgColor: "gray.800" }}
+      _light={{ bgColor: "gray.100" }}
+    >
       <Icon
         as={RiCloseFill}
         position="absolute"

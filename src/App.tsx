@@ -16,7 +16,11 @@ const App = () => {
       <Section paddingBottom={{ base: 40, md: 6 }}>
         <Hero />
       </Section>
-      <Section bgColor="gray.750" paddingBottom={{ base: 2, md: 1 }}>
+      <Section
+        _dark={{ bgColor: "gray.750" }}
+        _light={{ bgColor: "gray.100" }}
+        paddingBottom={{ base: 2, md: 1 }}
+      >
         <ProjectList />
       </Section>
       <Section paddingTop={{ base: 12, md: 24 }}>
@@ -25,22 +29,25 @@ const App = () => {
       <Section paddingTop={0}>
         <SkillsList />
       </Section>
-      <Section bgColor="gray.750">
+      <Section _dark={{ bgColor: "gray.750" }} _light={{ bgColor: "gray.100" }}>
         <Contact />
       </Section>
       <Box
         as="footer"
         borderTop="1px"
-        borderColor="whiteAlpha.100"
         paddingTop={5}
-        bgColor="gray.750"
+        _dark={{
+          bgColor: "gray.750",
+          color: "gray.700",
+          borderColor: "whiteAlpha.100",
+        }}
+        _light={{
+          bgColor: "gray.100",
+          color: "gray.500",
+          borderColor: "blackAlpha.50",
+        }}
       >
-        <Text
-          textAlign="center"
-          color="gray.700"
-          marginBottom={0}
-          paddingBottom={6}
-        >
+        <Text textAlign="center" marginBottom={0} paddingBottom={6}>
           Copyright &copy; 2023
         </Text>
       </Box>
