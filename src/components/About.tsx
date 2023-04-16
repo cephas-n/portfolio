@@ -5,7 +5,7 @@ import SkillsList from "./SkillsList";
 
 const About = () => {
   return (
-    <Box>
+    <>
       <Image
         src={myPhoto}
         boxSize={32}
@@ -14,7 +14,7 @@ const About = () => {
         marginX="auto"
       />
       <Heading as="h2">About Me</Heading>
-      <Text>
+      <Text color="gray.600">
         As an accomplished software Developer with experience working across
         multiple teams and locations, I have gained a wealth of knowledge and
         expertise in building efficient and functional software solutions. my
@@ -23,7 +23,7 @@ const About = () => {
         and ability to work across different platforms and technologies with a
         portfolio under my name.
       </Text>
-      <Text>
+      <Text color="gray.600">
         In addition to my technical skills, my background in electrical
         engineering brings a unique perspective and technical aptitude to my
         work, allowing me to approach problems and solutions in innovative and
@@ -31,7 +31,6 @@ const About = () => {
         experiences, I am a top-notch developer who can build anything from web
         apps to sophisticated software solutions.
       </Text>
-      <SkillsList />
       <Button
         variant="outline"
         borderColor="primary"
@@ -42,10 +41,11 @@ const About = () => {
           md: 24,
         }}
         rightIcon={<BsDownload />}
+        borderRadius="md"
       >
         Download My Resume
       </Button>
-    </Box>
+    </>
   );
 };
 

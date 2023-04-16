@@ -9,15 +9,15 @@ const Contact = () => {
       <Heading as="h2">Contact me</Heading>
       <Flex justifyContent="space-between" flexWrap="wrap">
         <Flex flexDirection="column" gap={4} width="min-content">
-          <Link as={HStack} color="gray.500">
+          <Link as={HStack} color="gray.600">
             <Icon as={BsWhatsapp} boxSize={6} />
             <Text>+90 533 831 87 14</Text>
           </Link>
-          <Link as={HStack} color="gray.500">
+          <Link as={HStack} color="gray.600">
             <Icon as={BsAt} boxSize={8} marginLeft="-5px" />
             <Text>cephas.developer@gmail.com</Text>
           </Link>
-          <Link as={HStack} color="gray.500">
+          <Link as={HStack} color="gray.600">
             <Icon as={BsLinkedin} boxSize={6} />
             <Text>https://www.linkedin.com/in/cephas</Text>
           </Link>

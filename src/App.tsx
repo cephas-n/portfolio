@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import NavBar from "./components/NavBar";
 import ProjectList from "./components/ProjectList";
 import Section from "./components/Section";
+import SkillsList from "./components/SkillsList";
 
 const App = () => {
   return (
@@ -12,20 +13,34 @@ const App = () => {
       <Container maxW="container.xl">
         <NavBar />
       </Container>
-      <Section paddingBottom={0}>
+      <Section paddingBottom={{ base: 40, md: 6 }}>
         <Hero />
       </Section>
-      <Section paddingBottom={0}>
+      <Section bgColor="gray.750" paddingBottom={{ base: 2, md: 1 }}>
         <ProjectList />
       </Section>
-      <Section paddingTop={0}>
+      <Section paddingTop={{ base: 12, md: 24 }}>
         <About />
       </Section>
-      <Section>
+      <Section paddingTop={0}>
+        <SkillsList />
+      </Section>
+      <Section bgColor="gray.750">
         <Contact />
       </Section>
-      <Box as="footer" borderTop="1px" borderColor="whiteAlpha.100" paddingTop={5}>
-        <Text textAlign="center" color="gray.700">
+      <Box
+        as="footer"
+        borderTop="1px"
+        borderColor="whiteAlpha.100"
+        paddingTop={5}
+        bgColor="gray.750"
+      >
+        <Text
+          textAlign="center"
+          color="gray.700"
+          marginBottom={0}
+          paddingBottom={6}
+        >
           Copyright &copy; 2023
         </Text>
       </Box>

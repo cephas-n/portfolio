@@ -21,7 +21,7 @@ const ContactForm = () => {
         marginBottom={4}
         focusBorderColor="primary"
       />
-      <Button variant="outline" borderColor="primary">
+      <Button variant="outline" borderColor="primary" borderRadius='md'>
         Send your message
       </Button>
     </FormControl>

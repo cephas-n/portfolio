@@ -52,7 +52,7 @@ const Hero = () => {
         fontSize={24}
         position="absolute"
         bottom={{
-          base: 0,
+          base: "-10%",
           md: "15%",
           lg: "30%",
         }}

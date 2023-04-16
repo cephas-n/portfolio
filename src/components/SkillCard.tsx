@@ -8,7 +8,7 @@ const SkillCard = () => {
         <Image src={jsIcon} boxSize={{ base: 4, sm: 6 }} />
         <Text
           textTransform="uppercase"
-          color="gray.500"
+          color="gray.600"
           fontSize={{
             base: "14px",
             sm: "16px",

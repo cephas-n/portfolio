@@ -1,10 +1,11 @@
-import { Container } from "@chakra-ui/react";
+import { Box, Container } from "@chakra-ui/react";
 import React, { ReactNode } from "react";
 
 interface Props {
   children: ReactNode;
   paddingBottom?: { [key: string]: number } | number;
   paddingTop?: { [key: string]: number } | number;
+  bgColor?: { [key: string]: string } | string;
 }
 const Section = ({
   children,
@@ -16,16 +17,18 @@ const Section = ({
     base: 14,
     md: 28,
   },
+  bgColor,
 }: Props) => {
   return (
-    <Container
-      as="section"
-      maxW="container.xl"
-      paddingTop={paddingTop}
-      paddingBottom={paddingBottom}
-    >
-      {children}
-    </Container>
+    <Box as="section" bgColor={bgColor}>
+      <Container
+        maxW="container.xl"
+        paddingTop={paddingTop}
+        paddingBottom={paddingBottom}
+      >
+        {children}
+      </Container>
+    </Box>
   );
 };
 
