@@ -1,8 +1,4 @@
-import {
-  Flex,
-  HStack,
-  Link,
-} from "@chakra-ui/react";
+import { Flex, HStack, Link } from "@chakra-ui/react";
 import ColorModeSwicth from "./ColorModeSwicth";
 import LanguageSelector from "./LanguageSelector";
 
@@ -19,13 +15,13 @@ const Menu = () => {
           md: "row",
         }}
       >
-        <Link variant="link" color="primary">
+        <Link color="primary">
           Works
         </Link>
-        <Link variant="link" color="primary">
+        <Link color="primary">
           About
         </Link>
-        <Link variant="link" color="primary">
+        <Link color="primary">
           Contact
         </Link>
       </Flex>

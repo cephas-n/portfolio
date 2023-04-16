@@ -68,3 +68,20 @@ section {
 .chakra-ui-light .project-preview::before {
   box-shadow: 0px 60px 50px 10px rgba(0, 0, 0, 0.11);
 }
+
+.navbar .chakra-link,
+.chakra-button.chakra-link  {
+  position: relative;
+  text-decoration: none !important;
+}
+/* 
+.navbar .chakra-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ADB5BD;
+  z-index: -1;
+} */

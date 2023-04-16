@@ -7,7 +7,7 @@ import ProjectList from "./components/ProjectList";
 import Section from "./components/Section";
 import SkillsList from "./components/SkillsList";
 
-const App = () => {
+const App = () => {  
   return (
     <Box as="div" className="container">
       <Container maxW="container.xl">

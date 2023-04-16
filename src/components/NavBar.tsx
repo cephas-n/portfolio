@@ -17,6 +17,7 @@ const NavBar = () => {
       borderBottom="1px"
       _dark={{ borderColor: "whiteAlpha.200" }}
       _light={{ borderColor: "blackAlpha.100" }}
+      className="navbar"
     >
       <Image
         src={logo}

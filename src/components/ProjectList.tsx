@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Heading } from "@chakra-ui/react";
-import Project, { ProjectType } from "./Project";
+import Project from "./Project";
 import { Fade } from "react-awesome-reveal";
 import { getProjects } from "../services/projects";
 
@@ -8,7 +8,7 @@ const ProjectList = () => {
   const projects = getProjects();
   return (
     <Box>
-      <Heading as="h2">My Works</Heading>
+      <Heading as="h2">My Latest Works</Heading>
       {projects.map((project) => (
         <Fade
           direction="up"

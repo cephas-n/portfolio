@@ -72,8 +72,14 @@ const components: ThemeComponents = {
   },
   Link: {
     baseStyle: {
-      fontSize: "22px",
+      fontSize: "19px",
       color: "primary",
+      paddingX: 3,
+      paddingY: 0.5,
+      borderRadius: "sm",
+      cursor: "pointer",
+      transition: "ease-in-out .2s",
+      _hover: { bgColor: "whiteAlpha.200" },
     },
   },
   Text: {
