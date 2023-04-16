@@ -5,13 +5,26 @@ import {
   HStack,
   Icon,
   Image,
+  Link,
   Text,
 } from "@chakra-ui/react";
 import { Fade, Zoom } from "react-awesome-reveal";
 import { BsChevronRight } from "react-icons/bs";
 import enerBuildPower from "../assets/images/enerbuild-power.webp";
 
-const Project = () => {
+export interface ProjectType {
+  id: string | number;
+  name: string;
+  description: string;
+  url: string;
+  type: string;
+  img: string;
+}
+interface Props {
+  project: ProjectType;
+}
+
+const Project = ({ project }: Props) => {
   return (
     <HStack
       spacing={{
@@ -29,16 +42,13 @@ const Project = () => {
       }}
     >
       <Box>
-        <Heading as="h3">EnerBuild Power S.A.R.L</Heading>
-        <Heading as="h4">BROCURE WEBSITE DESIGN</Heading>
-        <Text color="gray.600">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam optio
-          similique, inventore iste beatae fugit nisi velit laboriosam facere
-          saepe voluptatum itaque pariatur veniam sunt accusamus numquam nostrum
-          reprehenderit aperiam deleniti provident praesentium nihil placeat
-          maxime suscipit! Pariatur incidunt earum molestias!
-        </Text>
+        <Heading as="h3">{project.name}</Heading>
+        <Heading as="h4">{project.type}</Heading>
+        <Text color="gray.600">{project.description}</Text>
         <Button
+          as={Link}
+          href={project.url}
+          target="_blank"
           variant="outline"
           marginTop={8}
           overflow="hidden"
@@ -74,7 +84,7 @@ const Project = () => {
       >
         <Zoom style={{ zoom: 0 }} delay={500} triggerOnce>
           <Image
-            src={enerBuildPower}
+            src={project.img}
             display="block"
             marginX="auto"
             width={{
