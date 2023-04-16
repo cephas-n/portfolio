@@ -1,4 +1,13 @@
-import { Box, Button, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Center,
+  Flex,
+  Heading,
+  Image,
+  Link,
+  Text,
+} from "@chakra-ui/react";
 import { Fade } from "react-awesome-reveal";
 import { BsDownload } from "react-icons/bs";
 import myPhoto from "../assets/images/me.webp";
@@ -15,7 +24,7 @@ const About = () => {
         marginX="auto"
       />
       <Heading as="h2">About Me</Heading>
-      <Text color="gray.600">
+      <Text color="gray.600" textAlign="justify">
         As an accomplished software Developer with experience working across
         multiple teams and locations, I have gained a wealth of knowledge and
         expertise in building efficient and functional software solutions. my
@@ -24,7 +33,7 @@ const About = () => {
         and ability to work across different platforms and technologies with a
         portfolio under my name.
       </Text>
-      <Text color="gray.600">
+      <Text color="gray.600" textAlign="justify">
         In addition to my technical skills, my background in electrical
         engineering brings a unique perspective and technical aptitude to my
         work, allowing me to approach problems and solutions in innovative and
@@ -32,25 +41,27 @@ const About = () => {
         experiences, I am a top-notch developer who can build anything from web
         apps to sophisticated software solutions.
       </Text>
-      <Button
-        variant="outline"
-        borderColor="primary"
-        marginX="auto"
-        display="block"
-        marginTop={{
-          base: 16,
-          md: 24,
-        }}
-        rightIcon={<BsDownload />}
-        borderRadius="md"
-        transform="auto"
-        transition="ease-in-out .3s"
-        _hover={{
-          scale: 1.1,
-        }}
-      >
-        Download My Resume
-      </Button>
+      <Center>
+        <Button
+          as={Link}
+          href="/public/resume.pdf"
+          variant="outline"
+          borderColor="primary"
+          marginTop={{
+            base: 16,
+            md: 24,
+          }}
+          rightIcon={<BsDownload />}
+          borderRadius="md"
+          transform="auto"
+          transition="ease-in-out .3s"
+          _hover={{
+            scale: 1.1,
+          }}
+        >
+          Download My Resume
+        </Button>
+      </Center>
     </Fade>
   );
 };
