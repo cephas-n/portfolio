@@ -1,5 +1,12 @@
 
-import { ProjectType } from '../components/Project';
+export interface ProjectType {
+  id: string | number;
+  name: string;
+  description: string;
+  url: string;
+  type: string;
+  img: string;
+}
 
 const projects: ProjectType[] = [
   {

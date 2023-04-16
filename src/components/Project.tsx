@@ -11,15 +11,8 @@ import {
 import { Fade, Zoom } from "react-awesome-reveal";
 import { BsChevronRight } from "react-icons/bs";
 import enerBuildPower from "../assets/images/enerbuild-power.webp";
+import { ProjectType } from "../services/projects";
 
-export interface ProjectType {
-  id: string | number;
-  name: string;
-  description: string;
-  url: string;
-  type: string;
-  img: string;
-}
 interface Props {
   project: ProjectType;
 }

@@ -1,11 +1,16 @@
 import { Box, HStack, Image, Progress, Text } from "@chakra-ui/react";
 import jsIcon from "../assets/images/js.png";
+import { SkillType } from "../services/skills";
 
-const SkillCard = () => {
+interface Props {
+  skill: SkillType;
+}
+
+const SkillCard = ({ skill }: Props) => {
   return (
     <Box marginBottom={6}>
       <HStack>
-        <Image src={jsIcon} boxSize={{ base: 4, sm: 6 }} />
+        <Image src={skill.img} boxSize={{ base: 4, sm: 5 }} />
         <Text
           textTransform="uppercase"
           color="gray.600"
@@ -14,11 +19,11 @@ const SkillCard = () => {
             sm: "16px",
           }}
         >
-          Javascript
+          {skill.name}
         </Text>
       </HStack>
       <Progress
-        value={80}
+        value={skill.level}
         borderRadius={24}
         marginTop={2}
         colorScheme="secondary"
