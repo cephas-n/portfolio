@@ -62,7 +62,7 @@ const Hero = () => {
         left="68%"
         display="inline-block"
       >
-        <Fade cascade direction="up" style={{ opacity: 0 }}>
+        <Fade cascade direction="up" style={{ opacity: 0 }} triggerOnce>
           <Text as="span" fontSize={24}>
             I'm a{" "}
           </Text>
