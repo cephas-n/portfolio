@@ -52,7 +52,6 @@ const Hero = () => {
         <Image src={myPhoto} width={600} boxShadow="1px" />
       </Box>
       <Box
-        as="p"
         position="absolute"
         bottom={{
           base: "-10%",

@@ -8,6 +8,7 @@ interface Props {
   bgColor?: { [key: string]: string } | string;
   _dark?: { [key: string]: string | number };
   _light?: { [key: string]: string | number };
+  id?: string;
 }
 const Section = ({
   children,
@@ -21,10 +22,11 @@ const Section = ({
   },
   bgColor,
   _dark,
-  _light
+  _light,
+  id,
 }: Props) => {
   return (
-    <Box as="section" bgColor={bgColor} _dark={_dark} _light={_light} >
+    <Box as="section" bgColor={bgColor} _dark={_dark} _light={_light} id={id}>
       <Container
         maxW="container.xl"
         paddingTop={paddingTop}

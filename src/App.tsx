@@ -7,12 +7,20 @@ import ProjectList from "./components/ProjectList";
 import Section from "./components/Section";
 import SkillsList from "./components/SkillsList";
 
-const App = () => {  
+const App = () => {
   return (
     <Box as="div" className="container">
-      <Container maxW="container.xl">
-        <NavBar />
-      </Container>
+      <Box
+        position="sticky"
+        top="0"
+        zIndex="1000"
+        _dark={{ bgColor: "gray.800" }}
+        _light={{ bgColor: "white" }}
+      >
+        <Container maxW="container.xl">
+          <NavBar />
+        </Container>
+      </Box>
       <Section paddingBottom={{ base: 40, md: 6 }}>
         <Hero />
       </Section>
@@ -20,16 +28,21 @@ const App = () => {
         _dark={{ bgColor: "gray.750" }}
         _light={{ bgColor: "gray.100" }}
         paddingBottom={{ base: 2, md: 1 }}
+        id="work"
       >
         <ProjectList />
       </Section>
-      <Section paddingTop={{ base: 12, md: 24 }}>
+      <Section paddingTop={{ base: 12, md: 24 }} id="about">
         <About />
       </Section>
       <Section paddingTop={0}>
         <SkillsList />
       </Section>
-      <Section _dark={{ bgColor: "gray.750" }} _light={{ bgColor: "gray.100" }}>
+      <Section
+        _dark={{ bgColor: "gray.750" }}
+        _light={{ bgColor: "gray.100" }}
+        id="contact"
+      >
         <Contact />
       </Section>
       <Box

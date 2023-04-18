@@ -15,13 +15,13 @@ const Menu = () => {
           md: "row",
         }}
       >
-        <Link color="primary">
+        <Link color="primary" href="#work">
           Works
         </Link>
-        <Link color="primary">
+        <Link color="primary" href="#about">
           About
         </Link>
-        <Link color="primary">
+        <Link color="primary" href="#contact">
           Contact
         </Link>
       </Flex>
