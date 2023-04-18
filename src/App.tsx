@@ -76,9 +76,9 @@ const App = () => {
         pauseOnFocusLoss
         draggable
         pauseOnHover
-        theme="dark"
+        theme="colored"
         progressStyle={{
-          backgroundColor: '#E18F3B'
+          backgroundColor: "#E18F3B",
         }}
       />
     </Box>

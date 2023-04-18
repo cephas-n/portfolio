@@ -21,7 +21,20 @@ const ContactForm = () => {
       body: JSON.stringify(data),
     })
       .then((res) => res.json())
-      .then((data) => toast(data.message));
+      .then((data) => toast(data.message))
+      .catch((error) => {
+        const unpredictableError = !(
+          error.status &&
+          error.status >= 400 &&
+          error.status < 500
+        );
+        if (unpredictableError) {
+          console.error(error);
+          toast("An unexpected error has occurred!");
+          return;
+        }
+        toast(error.message);
+      });
   };
 
   return (
