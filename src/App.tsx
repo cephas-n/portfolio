@@ -1,4 +1,5 @@
 import { Box, Container, Text } from "@chakra-ui/react";
+import { ToastContainer } from "react-toastify";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Hero from "./components/Hero";
@@ -6,6 +7,7 @@ import NavBar from "./components/NavBar";
 import ProjectList from "./components/ProjectList";
 import Section from "./components/Section";
 import SkillsList from "./components/SkillsList";
+import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
   return (
@@ -64,6 +66,21 @@ const App = () => {
           Copyright &copy; 2023
         </Text>
       </Box>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+        progressStyle={{
+          backgroundColor: '#E18F3B'
+        }}
+      />
     </Box>
   );
 };
