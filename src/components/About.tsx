@@ -44,7 +44,7 @@ const About = () => {
       <Center>
         <Button
           as={Link}
-          href="/public/resume.pdf"
+          href="/resume.pdf"
           variant="outline"
           borderColor="primary"
           marginTop={{
