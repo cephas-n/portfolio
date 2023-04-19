@@ -24,7 +24,7 @@ const Contact = () => {
               <Text>https://www.linkedin.com/in/cephas</Text>
             </Link>
           </Flex>
-          <Box marginTop={8}>
+          <Box marginTop={8} flex={1} maxWidth="650px">
             <ContactForm />
           </Box>
         </Flex>

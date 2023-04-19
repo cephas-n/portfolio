@@ -83,13 +83,14 @@ const Project = ({ project }: Props) => {
             width={{
               base: "100%",
               md: "600px",
-              lg: "100%",
+              xl: "650px",
             }}
             marginTop={{
               base: 6,
               md: 12,
               lg: 0,
             }}
+            maxW="800px"
           />
         </Zoom>
       </Box>
