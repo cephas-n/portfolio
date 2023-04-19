@@ -13,16 +13,16 @@ const skills: SkillType[] = [
     level: 80,
   },
   {
-    id: 2,
-    name: "php",
-    img: "/public/images/php.webp",
-    level: 85,
-  },
-  {
     id: 3,
     name: "react js",
     img: "/public/images/reactjs.webp",
     level: 65,
+  },
+  {
+    id: 2,
+    name: "php",
+    img: "/public/images/php.webp",
+    level: 85,
   },
   {
     id: 4,
@@ -30,17 +30,17 @@ const skills: SkillType[] = [
     img: "/public/images/mysql.webp",
     level: 70,
   },
+  // {
+  //   id: 6,
+  //   name: "laravel",
+  //   img: "/public/images/laravel.webp",
+  //   level: 50,
+  // },
   {
     id: 5,
     name: "html 5",
     img: "/public/images/html5.webp",
     level: 98,
-  },
-  {
-    id: 6,
-    name: "laravel",
-    img: "/public/images/laravel.webp",
-    level: 50,
   },
   {
     id: 7,
