@@ -5,7 +5,7 @@ import FloatingMenu from "./FloatingMenu";
 import Menu from "./Menu";
 
 const NavBar = () => {
-  const [showMenu, toogleMenu] = useBoolean(false);
+  const [showMenu, { toggle: toogleMenu }] = useBoolean(false);
 
   return (
     <HStack
@@ -26,17 +26,17 @@ const NavBar = () => {
         _light={{ brightness: "10%" }}
       />
       <Show above="md">
-        <Menu />
+        <Menu toggleMenu={toogleMenu} />
       </Show>
       <Show below="md">
         {showMenu && (
           <FloatingMenu toggleMenu={toogleMenu}>
-            <Menu />
+            <Menu toggleMenu={toogleMenu} />
           </FloatingMenu>
         )}
       </Show>
       <Show below="md">
-        <RiMenu3Fill size={20} onClick={toogleMenu.toggle} />
+        <RiMenu3Fill size={20} onClick={toogleMenu} />
       </Show>
     </HStack>
   );

@@ -1,8 +1,13 @@
 import { Flex, HStack, Link } from "@chakra-ui/react";
 import ColorModeSwicth from "./ColorModeSwicth";
 import LanguageSelector from "./LanguageSelector";
+import { ChakraBooleanHook } from "../@types/useBoolean.d";
 
-const Menu = () => {
+interface Props {
+  toggleMenu: () => void;
+}
+
+const Menu = ({ toggleMenu }: Props) => {
   return (
     <>
       <Flex
@@ -15,13 +20,13 @@ const Menu = () => {
           md: "row",
         }}
       >
-        <Link color="primary" href="#work">
+        <Link color="primary" href="#work" onClick={toggleMenu}>
           Works
         </Link>
-        <Link color="primary" href="#about">
+        <Link color="primary" href="#about" onClick={toggleMenu}>
           About
         </Link>
-        <Link color="primary" href="#contact">
+        <Link color="primary" href="#contact" onClick={toggleMenu}>
           Contact
         </Link>
       </Flex>

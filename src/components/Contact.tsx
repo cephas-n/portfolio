@@ -11,18 +11,24 @@ const Contact = () => {
         <Heading as="h2">Contact me</Heading>
         <Flex justifyContent="space-between" flexWrap="wrap">
           <Flex flexDirection="column" gap={4} width="min-content">
-            <Link as={HStack} color="gray.600">
+            <HStack>
               <Icon as={BsWhatsapp} boxSize={6} />
-              <Text>+90 533 831 87 14</Text>
-            </Link>
-            <Link as={HStack} color="gray.600">
+              <Link href="tel:905338318714" color="gray.600">
+                +90 533 831 87 14
+              </Link>
+            </HStack>
+            <HStack>
               <Icon as={BsAt} boxSize={8} marginLeft="-5px" />
-              <Text>cephas.developer@gmail.com</Text>
-            </Link>
-            <Link as={HStack} color="gray.600">
+              <Link href="mailto:cephas.developer@gmail.com" color="gray.600">
+                cephas.developer@gmail.com
+              </Link>
+            </HStack>
+            <HStack>
               <Icon as={BsLinkedin} boxSize={6} />
-              <Text>https://www.linkedin.com/in/cephas</Text>
-            </Link>
+              <Link href="https://www.linkedin.com/in/cephas" color="gray.600">
+                https://www.linkedin.com/in/cephas
+              </Link>
+            </HStack>
           </Flex>
           <Box marginTop={8} flex={1} maxWidth="650px">
             <ContactForm />

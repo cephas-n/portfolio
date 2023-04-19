@@ -6,7 +6,7 @@ import { StyledOptions } from "@emotion/styled";
 
 interface Props {
   children: ReactNode;
-  toggleMenu: ChakraBooleanHook;
+  toggleMenu: () => void;
 }
 const FloatingMenu = ({ children, toggleMenu }: Props) => {
   const styles: StyleProps = {
@@ -37,7 +37,7 @@ const FloatingMenu = ({ children, toggleMenu }: Props) => {
         right={4}
         boxSize={8}
         color="gray.600"
-        onClick={toggleMenu?.toggle}
+        onClick={toggleMenu}
       />
       {children}
     </Flex>
