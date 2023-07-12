@@ -25,8 +25,11 @@ const Contact = () => {
             </HStack>
             <HStack>
               <Icon as={BsLinkedin} boxSize={6} />
-              <Link href="https://www.linkedin.com/in/cephas" color="gray.600">
-                https://www.linkedin.com/in/cephas
+              <Link
+                href="https://www.linkedin.com/in/cephas-naweji-484062173/"
+                color="gray.600"
+              >
+                https://www.linkedin.com/in/cephas...
               </Link>
             </HStack>
           </Flex>
