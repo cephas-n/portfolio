@@ -29,6 +29,9 @@ const Menu = ({ toggleMenu }: Props) => {
         <Link color="primary" href="#contact" onClick={toggleMenu}>
           Contact
         </Link>
+        <Link color="primary" href="#contact" onClick={toggleMenu}>
+          Linkedin
+        </Link>
       </Flex>
       <HStack spacing={8}>
         <ColorModeSwicth />
