@@ -44,7 +44,7 @@ const Hero = () => {
               lg: 24,
             }}
           >
-            Naweji
+            Naweji Vange
           </Text>
         </Heading>
       </Fade>
