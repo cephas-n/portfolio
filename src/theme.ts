@@ -17,7 +17,7 @@ const config: ThemeConfig = {
   useSystemColorMode: false,
 };
 
-const colors: Colors = {
+export const colors: Colors = {
   primary: "#E18F3B",
   gray: {
     100: "#F8F9FA",

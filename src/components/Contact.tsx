@@ -1,5 +1,12 @@
-import { Box, Flex, Heading, Icon, Link, Text } from "@chakra-ui/react";
-import { BsAt, BsLinkedin, BsWhatsapp } from "react-icons/bs";
+import { Box, Center, Flex, Heading, Icon, Link, Text } from "@chakra-ui/react";
+import {
+  BsAt,
+  BsGithub,
+  BsLinkedin,
+  BsMailbox,
+  BsWhatsapp,
+} from "react-icons/bs";
+import { MdMail } from "react-icons/md";
 import { HStack } from "@chakra-ui/react";
 import ContactForm from "./ContactForm";
 import { Fade } from "react-awesome-reveal";
@@ -9,34 +16,48 @@ const Contact = () => {
     <Fade triggerOnce style={{ opacity: 0 }}>
       <Box as="footer">
         <Heading as="h2">Contact me</Heading>
-        <Flex justifyContent="space-between" flexWrap="wrap">
-          <Flex flexDirection="column" gap={4} width="min-content">
+        <Center>
+          <Flex flexDirection="row" gap={4} width="min-content" margin="auto">
             <HStack>
-              <Icon as={BsWhatsapp} boxSize={6} />
-              <Link href="tel:905338318714" color="gray.600">
-                +90 533 831 87 14
-              </Link>
-            </HStack>
-            <HStack>
-              <Icon as={BsAt} boxSize={8} marginLeft="-5px" />
-              <Link href="mailto:cephas.developer@gmail.com" color="gray.600">
-                cephas.developer@gmail.com
-              </Link>
-            </HStack>
-            <HStack>
-              <Icon as={BsLinkedin} boxSize={6} />
               <Link
                 href="https://www.linkedin.com/in/cephas-naweji-484062173/"
                 color="gray.600"
+                display="flex"
+                padding={4}
+                borderRadius={10}
               >
-                https://www.linkedin.com/in/cephas...
+                <Icon as={BsLinkedin} boxSize={6} />
+              </Link>
+            </HStack>
+            <HStack>
+              <Link
+                href="mailto:cephas.developer@gmail.com"
+                color="gray.600"
+                display="flex"
+                padding={3}
+                borderRadius={10}
+              >
+                <Icon as={MdMail} boxSize={7} />
+              </Link>
+            </HStack>
+            <HStack>
+              <Link
+                href="https://www.github.com/cephas-n"
+                color="gray.600"
+                display="flex"
+                padding={3}
+                borderRadius={10}
+              >
+                <Icon as={BsGithub} boxSize={7} />
               </Link>
             </HStack>
           </Flex>
-          <Box marginTop={8} flex={1} maxWidth="650px">
+        </Center>
+        <Center>
+          <Box marginTop={10} flex={1} maxWidth="650px">
             <ContactForm />
           </Box>
-        </Flex>
+        </Center>
       </Box>
     </Fade>
   );

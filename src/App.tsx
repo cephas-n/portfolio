@@ -9,6 +9,7 @@ import Section from "./components/Section";
 import SkillsList from "./components/SkillsList";
 import "react-toastify/dist/ReactToastify.css";
 import Head from "./components/Head";
+import { colors } from "./theme";
 
 const App = () => {
   return (
@@ -66,7 +67,7 @@ const App = () => {
           }}
         >
           <Text textAlign="center" marginBottom={0} paddingBottom={6}>
-            Copyright &copy; 2023
+            Copyright &copy; 2024
           </Text>
         </Box>
         <ToastContainer
@@ -81,7 +82,7 @@ const App = () => {
           pauseOnHover
           theme="colored"
           progressStyle={{
-            backgroundColor: "#E18F3B",
+            backgroundColor: colors.primary as string,
           }}
         />
       </Box>

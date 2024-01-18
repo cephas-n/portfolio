@@ -25,13 +25,13 @@ const About = () => {
       />
       <Heading as="h2">About Me</Heading>
       <Text color="gray.600" textAlign="justify">
-        As an accomplished software Developer with experience working across
-        multiple teams and locations, I have gained a wealth of knowledge and
-        expertise in building efficient and functional software solutions. my
-        proficiency in various programming languages including Javascript, C++,
-        PHP, Laravel, HTML, CSS, React JS, and MYSQL demonstrates my versatility
-        and ability to work across different platforms and technologies with a
-        portfolio under my name.
+        I'm a software Developer with experience working across multiple
+        multiple, I have gained a wealth of knowledge and expertise in building
+        efficient and functional software solutions. my proficiency in various
+        programming languages including Javascript, HTML, CSS, React JS, NextJS,
+        PHP, Laravel, MYSQL and C++ demonstrates my versatility and ability to
+        work across different platforms and technologies with a portfolio under
+        my name.
       </Text>
       <Text color="gray.600" textAlign="justify">
         In addition to my technical skills, my background in electrical
