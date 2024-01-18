@@ -9,6 +9,8 @@ RUN npm install
 
 COPY . .
 
+ENV VITE_APP_API_URL=https://api.cefftech.net
+
 RUN npm run build
 
 # production stage
