@@ -13,6 +13,7 @@ dist-ssr
 .env
 .env.production
 resume.pdf
+dist.zip
 
 # Editor directories and files
 .vscode/*
